@@ -18,6 +18,25 @@
 			return String.fromCharCode(code + 32);
 		}
 
+		function mod(n, m) {
+			return ((n % m) + m) % m;
+		}
+
+		function sym_cipher(text, key) {
+			var result = "";
+			for(var i = 0; i < text.length; i++) {
+				var value = mod(codeAt(text[i]) + key, 95);
+				var letter = fromCode(value);
+				result = result + letter;
+			}
+
+			return result;
+		}
+		
+		function sym_decipher(text, key) {
+			return sym_cipher(text, -key);
+		} 
+
 	</script>
 </body>
 </html>
