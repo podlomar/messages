@@ -35,8 +35,16 @@
 		
 		function sym_decipher(text, key) {
 			return sym_cipher(text, -key);
-		} 
+		}
 
+		function asym_cipher(text, key) {
+			return sym_cipher(text, key);
+		}
+
+		function asym_decipher(text, key) {
+			return sym_cipher(text, key);
+		}
+		
 	</script>
 </body>
 </html>
