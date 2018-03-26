@@ -1,2 +1,2 @@
 # messages
-Lecture on pulibc key cryptography.
+Lecture on public key cryptography.
